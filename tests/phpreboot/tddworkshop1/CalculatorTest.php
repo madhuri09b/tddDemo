@@ -1,7 +1,7 @@
 <?php
-namespace phpreboot\tddworkshop1;
+namespace Phpreboot\Tddworkshop1;
 
-use phpreboot\tddworkshop1\Calculator;
+use Phpreboot\Tddworkshop1\Calculator;
 
 class CalculatorTest extends \PHPUnit_Framework_TestCase
 {
