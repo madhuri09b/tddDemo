@@ -14,11 +14,38 @@ if (!isset($argv[1])) {
 try {
     switch ($argv[1]) {
         case 'add':
-		 $argv[2] = str_replace("n",',',$argv[2]);
-		  
-			 $numbers = isset($argv[2]) ? $argv[2] : '';
-			 echo $calculator->add($numbers) . PHP_EOL; 
-			 break;
+            $numbers = isset($argv[2]) ? $argv[2] : '';
+            echo $calculator->add($numbers) . PHP_EOL;
+            break;
+			
+		case 'task3':
+            $numbers = isset($argv[2]) ? $argv[2] : '';
+            $extravar = isset($argv[3]) ? $argv[3] : '';			
+            echo $calculator->task3($numbers,$extravar) . PHP_EOL;
+            break;
+			
+		case 'task4':
+            $numbers = isset($argv[2]) ? $argv[2] : '';
+			 $extravar = isset($argv[3]) ? $argv[3] : '';		
+            echo $calculator->task4($numbers,$extravar) . PHP_EOL;
+            break;
+			
+		case 'task5':
+            $numbers = isset($argv[2]) ? $argv[2] : '';
+            echo $calculator->task5($numbers) . PHP_EOL;
+            break;
+		
+		case 'task6':
+            $numbers = isset($argv[2]) ? $argv[2] : '';
+            echo $calculator->task6($numbers) . PHP_EOL;      
+            break;
+		
+		case 'task7':
+            $numbers = isset($argv[2]) ? $argv[2] : '';
+			 $extravar = isset($argv[3]) ? $argv[3] : '';		
+            echo $calculator->task7($numbers,$extravar) . PHP_EOL;
+            break; 
+		
         default:
             echo 'Please check the operator.' . PHP_EOL;
     }
